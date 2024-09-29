@@ -2,7 +2,11 @@
 import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css";
 
-
+const lightbox = new SimpleLightbox('.gallery a', {
+    captions: true,
+    captionDelay: 250,  
+    captionData: 'alt',
+});
 
 
 
@@ -100,3 +104,4 @@ const imageElements = images.map((image) => {
 });
 
 galleryList.append(...imageElements);
+
