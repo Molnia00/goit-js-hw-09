@@ -3,9 +3,9 @@ import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css";
 
 const lightbox = new SimpleLightbox('.gallery a', {
-    captions: true,
     captionDelay: 250,  
     captionData: 'alt',
+    nav: true,
 });
 
 
@@ -81,6 +81,7 @@ const images = [
 const galleryList = document.querySelector('.gallery');
 
 const imageElements = images.map((image) => {
+
   const listItem = document.createElement('li');
     listItem.classList.add('gallery-item');  
     
