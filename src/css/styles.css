@@ -4,31 +4,33 @@
   | default @import url()
   |============================
 */
+
+
+
 /* Common styles */
 @import url('./reset.css');
 
-
+.body-class{
+  font-family: 'Montserrat', sans-serif;
+  background-color: burlywood;
+}
 .gallery {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
+  gap: 30px;
 }
 
 .gallery-item {
-  width: calc((100% - 48px) / 3);
+  width: calc((100% - 48px)/ 3);
   background-image: contain;
 
 }
 
 .cont-item {
-  width: 360px;
-  height: 200px;
   overflow: hidden;
   margin-bottom: 24px;
 }
-
-
-
 
 .gallery-image {
   width: 100%;
@@ -36,48 +38,80 @@
   max-width: unset;
   object-fit: cover;
 }
-
+/* =========== /form========== */
+.feedback-form{
+  width: 360px;
+  height: 192px;
+}
 
 .container-form{
+  padding-top: 24px;
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-bottom: 24px;
   width: 408px;
   height: 296px;
   border-radius: 8px;
   background-color: #FFFFFF;
-  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
   
+
 }
 .email-cont{
   display: flex;
-padding: 24px 24px 8px  24px;
+padding-bottom: 8px;
 flex-direction: column;
 }
 .email-input{
   width: 360px;
   height: 40px;
   border: 1px solid #808080;
-  border-radius:8px;
+  border-radius:5px;
+  
 }
 
-.email-text{
+.labels-text{
   display: block;
   margin-bottom: 10px;
-  font-family: Montserrat;
+  color: #2E2F42;;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.04em;
-    
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+.textartea-cont{
+  padding-bottom: 16px;
+  display: flex;
+  flex-direction: column;
 }
 
 
+.textarea-A{
+  width: 360px;
+  height: 80px;
+  border: 1px solid #808080;
+  border-radius: 5px;
+}
+
+.btn-submit{
+  width: 95px;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    background-color: #4E75FF;
+    color: #FFFFFF;
+}
 
 
-
-
-
-
-
-
+.email-input:hover{
+border-color:#000000;
+}
 
 
 
