@@ -109,11 +109,14 @@ flex-direction: column;
 }
 
 
-.email-input:hover{
+.email-input:hover,
+.textarea-A:hover{
 border-color:#000000;
 }
 
-
+.btn-submit:hover{
+  background-color: #6C8CFF;
+}
 
 
 
