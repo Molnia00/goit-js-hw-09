@@ -10,6 +10,45 @@
 /* Common styles */
 @import url('./reset.css');
 
+.ul-norm{
+  display: flex;
+  gap: 10px;
+}
+
+.h1-1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    background-color: #2fa0f6;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.h1-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  background-color: #2fa0f6;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
 .body-class{
   font-family: 'Montserrat', sans-serif;
   background-color: #6d6dad;
@@ -114,10 +153,19 @@ flex-direction: column;
 border-color:#000000;
 }
 
-.email-input:active,
-.textarea-A:active {
-  border-color: #000000;
+.email-input::placeholder {
+  opacity: 0;
 }
+
+.email-input:focus::placeholder{
+  opacity: 1;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-align: left;
+}
+
 
 
 .btn-submit:hover{
@@ -136,6 +184,7 @@ border-color:#000000;
     background-color: #4eb2ff;
     color: #FFFFFF;
     margin-bottom: 10px;
+    border:1px solid #000000;
 }
 
 
