@@ -12,7 +12,7 @@
 
 .body-class{
   font-family: 'Montserrat', sans-serif;
-  background-color: burlywood;
+  background-color: #6d6dad;
 }
 .gallery {
   display: flex;
@@ -46,9 +46,9 @@
 
 .container-form{
   padding-top: 24px;
-  padding-right: 24px;
+  padding-right:1px;
   padding-left: 24px;
-  padding-bottom: 24px;
+  padding-bottom: 12px;
   width: 408px;
   height: 296px;
   border-radius: 8px;
@@ -114,10 +114,29 @@ flex-direction: column;
 border-color:#000000;
 }
 
+.email-input:active,
+.textarea-A:active {
+  border-color: #000000;
+}
+
+
 .btn-submit:hover{
   background-color: #6C8CFF;
 }
 
+.btn-norm{
+  width: 95px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    background-color: #4eb2ff;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
 
 
 
