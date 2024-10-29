@@ -28,15 +28,9 @@ function subFunClear(event) {
     }
 }
 
-getIteamfromLocalStorage()
 loadFormData()
 
-function getIteamfromLocalStorage() {
-    const sendedMess = localStorage.getItem(storageKey);
-    if (sendedMess) {
-        formData.value = sendedMess;
-    }
-}
+
 
 function loadFormData() {
     const storedData = localStorage.getItem(storageKey);
