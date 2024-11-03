@@ -106,3 +106,14 @@ const lightbox = new SimpleLightbox('.gallery a', {
     captionData: 'alt',
     nav: true,
 });
+
+
+
+
+
+
+
+
+
+
+
